@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondation SCP — Centre d'Information</title>
+  <meta name="description" content="Archives déclassifiées de la Fondation SCP. Sécuriser. Contenir. Protéger.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg" alt="Emblème de la Fondation SCP" onerror="this.style.display='none'">
+      <div class="brand">
+        <h1>Fondation SCP</h1>
+        <div class="motto">Sécuriser &nbsp;•&nbsp; Contenir &nbsp;•&nbsp; Protéger</div>
+      </div>
+      <div class="clearance">Habilitément : Niveau 2 — Archiviste</div>
+    </div>
+  </header>
+
+  <div class="hazard"></div>
+
+  <section class="banner">
+    <div class="banner-box">
+      <h2>Centre d'Information — Base de Données des Anomalies</h2>
+      <p>
+        Vous accédez actuellement aux archives déclassifiées de la Fondation SCP, organisation secrète
+        chargée de localiser, contenir et étudier les objets, entités et phénomènes anormaux qui menacent
+        la normalité perçue du monde. Les documents présentés ci-dessous sont destinés au personnel
+        autorisé uniquement. Toute divulgation au public est passible de poursuites conformément au
+        protocole de sécurité informationnelle.
+      </p>
+      <div class="stats">
+        <div class="stat"><div class="num" id="stat-objets">—</div><div class="lbl">Objets archivés</div></div>
+        <div class="stat"><div class="num" id="stat-keter">—</div><div class="lbl">Objets Keter</div></div>
+        <div class="stat"><div class="num" id="stat-sites">—</div><div class="lbl">Sites de confinement</div></div>
+        <div class="stat"><div class="num">24/7</div><div class="lbl">Surveillance active</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="search-wrap">
+      <span class="icon">⌕</span>
+      <input type="text" id="search" placeholder="Rechercher par numéro, nom ou mot-clé…" autocomplete="off">
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-classe="all">Tous</button>
+      <button class="filter-btn" data-classe="Safe">Safe</button>
+      <button class="filter-btn" data-classe="Euclid">Euclid</button>
+      <button class="filter-btn" data-classe="Keter">Keter</button>
+    </div>
+  </section>
+
+  <main class="archive">
+    <div class="section-title">Archives des objets anormaux — accès restreint</div>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <span class="doc-ref">Document SCP — Copie de lecture</span>
+        <button class="modal-close" id="modal-close">✕ FERMER</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      SÉCURISER. CONTENIR. PROTÉGER.<br>
+      Contenu adapté du <a href="https://scpwiki.com" target="_blank" rel="noopener">Wiki SCP</a>
+      sous licence <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.
+      Les images proviennent des pages officielles du wiki.<br>
+      Site de fan non officiel — la Fondation SCP est une œuvre de fiction collaborative.
+    </p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
